@@ -21,4 +21,5 @@
     <link rel="stylesheet" href='../css/nav.css' />
     <link rel="stylesheet" href="../css/Card-flip.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <?php session_start(); ?>
 </head>

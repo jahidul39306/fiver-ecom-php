@@ -12,6 +12,7 @@
                 <li><a href="Login.php">Login</a></li>
                 <li><a href="Computer-comp.php">Computer Components</a></li>
                 <li><a href="Shopping-cart.php">Shopping Cart</a></li>
+                <li><a href="AdminPage.php">Admin Page</a></li>
             </ul>
         </div>
         <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
