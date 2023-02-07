@@ -209,7 +209,14 @@
                 <th><b><?php echo $totalPrice ?></b></th>
             </div>
             <div class="checkout-btn">
-                <a href="./controller/CheckOutAction.php">Check Out</a>
+                <?php
+                    if(isset($_SESSION['username'])){ ?>
+                        <a href="./controller/CheckOutAction.php">Check Out</a>
+                    <?php } else{ ?>
+                        <a href="login.php">Check Out</a>
+                    <?php }
+                ?>
+                
             </div>
 
         </div>

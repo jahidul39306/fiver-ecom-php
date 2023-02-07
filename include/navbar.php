@@ -11,8 +11,10 @@
                     <li><a href="./about.php">About</a></li>
                     <li><a href="./contact.php">Contact</a></li>
                     <?php
-                    if (isset($_SESSION['username'])) {
+                    if (isset($_SESSION['username']) and ($_SESSION['userType']) == 'admin') {
                         echo '<li><a href="./admin.php">Admin</a></li>';
+                    }
+                    if (isset($_SESSION['username'])) {
                         echo '<li><a href="./login.php?logout=true">Logout</a></li>';
                     } else {
                         echo '<li><a href="./login.php">Login</a></li>';

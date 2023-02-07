@@ -7,6 +7,8 @@ function connect()
     }
     return $conn;
 }
+
+// Registration Query
 function addAdmin($UserName, $Pass, $FirstName, $Email, $PhoneNum)
 {
     $conn = connect();
@@ -15,6 +17,15 @@ function addAdmin($UserName, $Pass, $FirstName, $Email, $PhoneNum)
     $sql->bind_param("sssss", $UserName, $Pass, $FirstName, $Email, $PhoneNum);
     return $sql->execute();
 }
+function addCustomer($UserName, $Pass, $FirstName, $Email, $PhoneNum)
+{
+    $conn = connect();
+    $sql = $conn->prepare("INSERT INTO customer (UserName, Pass, FirstName, Email, PhoneNum) VALUES(?, ?, ?, ?, ?)");
+
+    $sql->bind_param("sssss", $UserName, $Pass, $FirstName, $Email, $PhoneNum);
+    return $sql->execute();
+}
+// Search Query
 function getAllCpu()
 {
     $conn = connect();
@@ -161,7 +172,7 @@ function deleteRamByID($id)
 
 
 
-// Check ADMIN Credentials
+// Check Credentials
 function checkAdminCredentials($UserName, $Password)
 {
     $conn = connect();
@@ -171,3 +182,14 @@ function checkAdminCredentials($UserName, $Password)
     $res = $sql->get_result();
     return $res;
 }
+function checkCustomerCredentials($UserName, $Password)
+{
+    $conn = connect();
+    $sql = $conn->prepare("SELECT * FROM customer WHERE UserName = ? AND Pass = ?");
+    $sql->bind_param("ss", $UserName, $Password);
+    $sql->execute();
+    $res = $sql->get_result();
+    return $res;
+}
+
+

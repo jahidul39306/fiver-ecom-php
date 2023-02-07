@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (empty($_POST["phone"])) {
         $phoneErr = "Please enter a phone";
     }
-    $res = addAdmin($_POST["username"], $_POST["password"], $_POST["firstname"], $_POST["email"], $_POST["phone"]);
+    $res = addCustomer($_POST["username"], $_POST["password"], $_POST["firstname"], $_POST["email"], $_POST["phone"]);
     if ($res == 1) {
         echo "<script>alert('Registration Succesfull!!');</script>";
         echo "<script>window.location.href='login.php';</script>";
