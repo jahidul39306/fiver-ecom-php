@@ -1,0 +1,104 @@
+create database webbase;
+use webbase;
+CREATE TABLE Ram (
+    RamID int,
+    RamName varchar(40),
+    RamSpeed varchar(40),
+    RamType varchar(40),
+    Price float,
+    Stock int
+);
+insert into Ram
+(RamID,RamName,RamSpeed,RamType,Price,Stock) 
+values
+('1','Corsair Vengeance RGB Pro SL','32GB','DDR4','586.81','50'),
+('2','Crucial RAM','16GB','DDR4','200.00','50'),
+('3','Crucial by Micron','8GB','DDR4','137.47','50'),
+('4','Pepisky LO','4GB','DDR3','124.83','50'),
+('5','KUESUNY ','16GB','DDR3','179.99','50'),
+('6','Hynix Laptop Ram ','8GB','DDR3','105.78','50');
+
+CREATE TABLE cpu (
+    cpuId int,
+    cpuName varchar(40),
+    cpuModel varchar(40),
+    cpuSpeed varchar(40),
+    cpuSocket varchar(40),
+    Price varcharacter(40),
+    Stock int
+);
+
+insert into cpu
+(cpuId,cpuName,cpuModel,cpuSpeed,cpuSocket,Price,Stock) 
+values
+('1','Intel CPU','Core i3','3.6 GHz','LGA 1200','380.05','50'),
+('2','Intel CPU','Core i7','3.6, 2.1, 4.9 GHz','FC-LGA16A','1,545.00','20'),
+('3','AMD Ryzen 5','5 5600G','3.9 GHz','Socket AM4','724.57','30'),
+('4','AMD Ryzen™ 9 ','9 5950X','5 GHz','SAM5','2,339.02','10'),
+('5','AMD Ryzen 5 ','5 4000','3.7 GHz','Socket AM4','563.42','30'),
+('6','Intel CPU ','Core i5','2.5, 4.4 GHz','LGA 1150','684.00','20');
+
+
+CREATE TABLE GPU (
+    GPU_Id int,
+    GPU_Name varchar(40),
+    Graphics_RamSize varchar(40),
+    GPU_ClockSpeed varchar(40),
+    GPU_VideoOutput varchar(40),
+    Graphics_RamType varchar(40),
+    Price varchar(40),
+    Stock int
+);
+
+insert into GPU
+(GPU_Id,GPU_Name,Graphics_RamSize,GPU_ClockSpeed,GPU_VideoOutput,Graphics_RamType,Price,Stock) 
+values
+('1','MSI Gaming GeForce RTX 3070 Ti','8 GB','1800 MHz','DisplayPort, HDMI','GDDR6','3,452.64','5'),
+('2','NVIDIA GeForce RTX 3050','8 GB','1777 MHz','DisplayPort, HDMI','GDDR6','1,099.00','10'),
+('3','ASRock Radeon RX 6600','8 GB','1626 MHz','DisplayPort, HDMI','GDDR6','1,011.99','10'),
+('4','GIGABYTE B660 AORUS Master','4 GB','1500 MHz','DisplayPort, HDMI','DDR4','830.76','20'),
+('5','MSI Ventus GeForce RTX 3060 Ti','8 GB','1695 MHz','DisplayPort, HDMI','GDDR6','2,115.99','5'),
+('6','GIGABYTE AORUS GeForce RTX 3050 ELITE','8 GB','1750 MHz','DisplayPort, HDMI','GDDR6','1,611.14','5');
+
+
+CREATE TABLE Admin(
+    UserName varchar(255)NOT NULL,
+    Pass varchar(255)NOT NULL,
+    FirstName varchar(255)NOT NULL,
+	Email varchar(32)NOT NULL,
+	PhoneNum varchar(10)NOT NULL
+); 
+INSERT INTO Admin (UserName, Pass, PhoneNum, Email, FirstName)
+VALUES 
+('ahm232', '1234', '0598768898','ali@gmail.com','ali'),
+('abc123', '3213', '0577777898','bader33@gmail.com','bader'),
+('aed234', '4313', '0542421354','musta45@gmail.com','mustafa'),
+('www333', '5678', '0599987877','abdul123@gmail.com','abdul'),
+('sad22', '4564', '0544443211','ibrahim@gmail.com','ibrahim'),
+('ali67', '4545', '0539888878','ahmed546@gmail.com','ahmed');
+
+CREATE TABLE Customer 
+
+ (
+    OrderNum int NOT NULL,
+    LastName varchar(255),
+    FirstName varchar(255)NOT NULL,
+    country varchar(255)NOT NULL,
+	Email varchar(32)NOT NULL,
+	PhoneNum varchar(10)NOT NULL
+
+	
+);
+INSERT INTO Customer (FirstName, LastName, Ordernum, PhoneNum, Email, country)
+VALUES 
+('mohammed', 'ali', '344', '+539987898','moh222@gmail.com','dammam'),
+('alex', 'micv','347', '+153453456','alex3232@gmail.com','us'),
+('khalid', 'ali','645', '+535437898','kal777@gmail.com','khobar'),
+('bader', 'ahmed','345', '+535685898','bad212@gmail.com','dammam'),
+('felix', 'swe','678', '+521234589','fswe22@gmail.com','mexico'),
+('ahmed', 'ali','143', '+539457898','ali99@gmail.com','dammam'),
+('mik', 'john','321', '+333993246','mik@gmail.com','paris'),
+('abdullah', 'ali','743', '+539876843','aaa@gmail.com','dammam'),
+('ahmed', 'mohammed','567', '+971909888','moh112@gmail.com','dubai'),
+('hassan', 'ali','867', '+539435666','hass@gmail.com','dammam');
+

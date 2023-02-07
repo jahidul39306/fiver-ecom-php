@@ -1,6 +1,6 @@
 function IncreaseCpu(productId) {
   $.ajax({
-    url: "../control/AddToCart.php",
+    url: "./controller/AddToCart.php",
     data: { action: "Increase-Cpu", productId: productId },
     type: "POST",
   });
@@ -12,7 +12,7 @@ function IncreaseCpu(productId) {
 
 function DecreaseCpu(productId) {
   $.ajax({
-    url: "../control/AddToCart.php",
+    url: "./controller/AddToCart.php",
     data: { action: "Decrease-Cpu", productId: productId },
     type: "POST",
   });
@@ -24,7 +24,7 @@ function DecreaseCpu(productId) {
 
 function IncreaseRam(productId) {
   $.ajax({
-    url: "../control/AddToCart.php",
+    url: "./controller/AddToCart.php",
     data: { action: "Increase-Ram", productId: productId },
     type: "POST",
   });
@@ -36,7 +36,7 @@ function IncreaseRam(productId) {
 
 function DecreaseRam(productId) {
   $.ajax({
-    url: "../control/AddToCart.php",
+    url: "./controller/AddToCart.php",
     data: { action: "Decrease-Ram", productId: productId },
     type: "POST",
   });
@@ -47,25 +47,25 @@ function DecreaseRam(productId) {
 }
 
 function IncreaseGpu(productId) {
-    $.ajax({
-      url: "../control/AddToCart.php",
-      data: { action: "Increase-Gpu", productId: productId },
-      type: "POST",
-    });
-    $(document).ajaxStop(function () {
-      window.location.reload();
-    });
-    return false;
-  }
-  
-  function DecreaseGpu(productId) {
-    $.ajax({
-      url: "../control/AddToCart.php",
-      data: { action: "Decrease-Gpu", productId: productId },
-      type: "POST",
-    });
-    $(document).ajaxStop(function () {
-      window.location.reload();
-    });
-    return false;
-  }
+  $.ajax({
+    url: "./controller/AddToCart.php",
+    data: { action: "Increase-Gpu", productId: productId },
+    type: "POST",
+  });
+  $(document).ajaxStop(function () {
+    window.location.reload();
+  });
+  return false;
+}
+
+function DecreaseGpu(productId) {
+  $.ajax({
+    url: "./controller/AddToCart.php",
+    data: { action: "Decrease-Gpu", productId: productId },
+    type: "POST",
+  });
+  $(document).ajaxStop(function () {
+    window.location.reload();
+  });
+  return false;
+}

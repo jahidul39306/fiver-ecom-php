@@ -1,18 +1,14 @@
 * {
     font-family: "Roboto";
 }
-
-.footer {
+.footer{
     background-color: #123159;
     width: 100%;
     padding: 75px;
     color: #F2F2F2;
     display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-    text-align: center;
+    margin-top: 250px;
 }
-
 .copyright {
     background-color: #BFBD99;
     width: 100%;
@@ -21,43 +17,44 @@
     padding: 10px;
     font-size: 14px;
 }
-
 .footer div {
     text-align: center;
 }
-
+.col-2 {
+    padding: 0px 637px 0px 635px;
+}
 .social-icons {
     margin-top: 30px;
 }
-
 .social-icons i {
     font-size: 22px;
     margin: 10px;
     cursor: pointer;
 }
-
 .social-icons a {
     color: white;
 }
-
+.col-1{
+    color: #F2F2F2;
+}
 .col-1 a {
     display: block;
     text-decoration: none;
     color: #F2F2F2;
     margin-bottom: 10px;
 }
-
 .col-1 a:hover {
     background-color: #6b92c4;
 }
-
 .col-2 a {
     display: block;
     text-decoration: none;
     color: #F2F2F2;
     margin-bottom: 10px;
 }
-
 .col-2 a:hover {
     background-color: #6b92c4;
 }
+
+
+

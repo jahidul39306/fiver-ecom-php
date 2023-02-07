@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Commerce</title>
+    <!--scripts-->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/d53e2c7b86.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"/>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"/>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="Card-flip.css" />
+    <link rel="stylesheet" href="footer.css"/>
+</head>
+<body style="overflow-y: auto">
+<header>
+<div class="wrapper">
+    <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+            <div class="logo"><a href="Home%20page.html"><img class="icon1" src="computer-case.png"> Pc Parts</a></div>
+            <ul class="links">
+                <li><a href="Home%20page.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Computer-comp.html">Computer Components</a></li>
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+            </ul>
+        </div>
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something to Search..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </form>
+    </nav>
+</div>
+</header>
+<div class="cards">
+<a href = "gpu.html">
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="gpu.png" style="margin: 130px"/>
+        </div>
+        <div class="flip-card-back">
+            <img src="gpu.png" style="margin: 50px"/>
+            <h1>GPU</h1>
+            <P>Graphic Processing Unit</P>
+        </div>
+    </div>
+</a></div>
+
+<a href = "cpu.html">
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="cpu.png" style="margin: 130px"/>
+        </div>
+        <div class="flip-card-back">
+            <img src="cpu.png" style="margin: 50px"/>
+            <h1>CPU</h1>
+            <p>Control Processing Unit</p>
+        </div>
+    </div>
+</a></div>
+<a href = "ram.html">
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="ram.png" style="margin: 130px"/>
+        </div>
+        <div class="flip-card-back">
+            <img src="ram.png" style="margin: 50px"/>
+            <h1>RAM</h1>
+            <P>Random access memory</P>
+        </div>
+    </div>
+</a></div>
+</div>
+
+</div>
+
+<!--footer-->
+<footer>
+    <div class="footer">
+      <div class="col-1">
+          <h2>USEFUL LINKS</h2>
+          <br>
+          <a href="Home%20page.html">Home</a>
+          <a href="About.html">About Us</a>
+          <a href="Help.html">Help</a>
+      </div>
+      <div class="col-2">
+          <h2>PROJECT</h2>
+          <br>
+          <p> Web-Based Project</p>
+          <br>
+          <a href="https://www.iau.edu.sa/ar/colleges/college-of-computer-science-and-information-technology" target="_blank">CCSIT IAU</a>
+      </div>
+      <div class="col-3">
+          <h2>CONTACT</h2>
+          <br>
+          <p>Follow Us</p>
+          <div class="social-icons">
+              <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://twitter.com/" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://instagram.com/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://youtube.com/" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright &#169; 2022. PC Parts. All Rights Reserved.
+        </p>
+    </div>
+
+</footer>
+</body>
+</html>
