@@ -5,6 +5,9 @@
 <?php
 include 'include/head.php';
 include './controller/EditCpuAction.php';
+if (empty($_SESSION["username"]) or $_SESSION['userType'] != 'admin') {
+    header("location:login.php");
+}
 ?>
 <link rel="stylesheet" href="./css/addForm.css">
 <!-- head End -->

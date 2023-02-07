@@ -7,7 +7,7 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-if (empty($_SESSION["username"])) {
+if (empty($_SESSION["username"]) or $_SESSION['userType'] != 'admin') {
     header("location:login.php");
 }
 include './controller/EditGpuAction.php';

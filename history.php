@@ -2,7 +2,12 @@
 <html lang="en">
 
 <!-- Head from shopp-->
-<?php include 'include/head.php' ?>
+<?php
+include 'include/head.php'; 
+if (!isset($_SESSION["username"])) {
+    header("location:login.php");
+}
+?>
 <link rel="stylesheet" href="./css/cart.css">
 <script src="./js/Shopping-cart.js"></script>
 <!-- head End -->
